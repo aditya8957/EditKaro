@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in - Video Editing & Social Media Marketing Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <i class="fas fa-video"></i>
+                <span>Editkaro.in</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section - No Video -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        
+        <!-- Animated Particles -->
+        <div class="particles" id="particles"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-pulse"></span>
+                Award-Winning Agency
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Craft Visual</span>
+                <span class="title-gradient">Masterpieces</span>
+            </h1>
+            <p class="hero-subtitle">Professional video editing and social media marketing solutions that transform your brand's story into captivating visual experiences.</p>
+            
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Satisfaction</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Experts</div>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})">
+                    View Portfolio <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                    Get In Touch <i class="fas fa-play-circle"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2>About Editkaro.in</h2>
+                <p>We turn raw footage into compelling stories that captivate audiences worldwide</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon-box">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Expert Editing</h3>
+                    <p>From concept to final cut, our skilled editors bring your vision to life with precision and creativity.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Social Media Focus</h3>
+                    <p>Optimized content for Instagram, TikTok, YouTube and more. We understand platform-specific requirements.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box">
+                        <i class="fas fa-sparkles"></i>
+                    </div>
+                    <h3>Creative Excellence</h3>
+                    <p>Award-winning creatives who push boundaries and deliver content that stands out in crowded feeds.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Fast Turnaround</h3>
+                    <p>Quick delivery without compromising on quality. We respect deadlines and deliver on time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Work</span>
+                <h2>Creative Portfolio</h2>
+                <p>Explore our diverse range of video editing work across various categories</p>
+            </div>
+
+            <div class="filter-container" id="filterContainer"></div>
+            <div class="portfolio-grid" id="portfolioGrid"></div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="section why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Choose Us</span>
+                <h2>Numbers That Speak</h2>
+                <p>Trusted by creators and businesses worldwide</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="520">0</div>
+                    <p class="stat-label">Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="99">0</div>
+                    <p class="stat-label">Client Satisfaction</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="48">0</div>
+                    <p class="stat-label">Team Members</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="8">0</div>
+                    <p class="stat-label">Years Experience</p>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>24/7 Support</h4>
+                    <p>Round-the-clock support to handle your urgent requests</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4>Latest Software</h4>
+                    <p>Equipped with industry-leading editing tools and plugins</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h4>Custom Solutions</h4>
+                    <p>Tailored approaches for each project and client</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h4>Unlimited Revisions</h4>
+                    <p>We work with you until you're completely satisfied</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2>What Clients Say</h2>
+                <p>Don't just take our word for it</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Editkaro.in transformed our brand's social media presence. Their editing is top-notch and delivery is always on time!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div>
+                            <p class="author-name">Arjun Kumar</p>
+                            <p class="author-role">Content Creator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional, creative, and affordable. They understood our vision perfectly and delivered beyond expectations."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MP</div>
+                        <div>
+                            <p class="author-name">Mira Patel</p>
+                            <p class="author-role">E-commerce Brand Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Working with them on our documentary project was seamless. Their attention to detail is remarkable!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RV</div>
+                        <div>
+                            <p class="author-name">Rajesh Verma</p>
+                            <p class="author-role">Documentary Filmmaker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Let's Work Together</h2>
+                <p>Ready to create something amazing? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>New Delhi, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 8957434966</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>hello@editkaro.in</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-video"></i> Editkaro.in</h3>
+                    <p>Premium video editing and social media marketing solutions for creators and businesses worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Video Editing</a></li>
+                        <li><a href="#">Social Media Content</a></li>
+                        <li><a href="#">Color Grading</a></li>
+                        <li><a href="#">Motion Graphics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Editkaro.in. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div id="videoContainer"></div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
