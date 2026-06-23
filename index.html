@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Editkaro.in - Professional video editing and social media marketing solutions. Transform your brand's story into captivating visual experiences.">
+    <meta name="keywords" content="video editing, social media marketing, content creation, professional editing">
+    <meta name="author" content="Editkaro.in">
+    <meta property="og:title" content="Editkaro.in - Video Editing & Social Media Marketing Agency">
+    <meta property="og:description" content="Professional video editing and social media marketing solutions">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1200&h=630&fit=crop">
+    
     <title>Editkaro.in - Video Editing & Social Media Marketing Agency</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -31,7 +38,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section - No Video -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-bg">
             <div class="hero-gradient"></div>
@@ -66,6 +73,23 @@
                     <div class="stat-label">Experts</div>
                 </div>
             </div>
+
+            <!-- Email Subscriber Form -->
+            <div class="email-collector-banner">
+                <h3>Get Exclusive Updates</h3>
+                <p>Subscribe to our newsletter for latest editing trends and offers</p>
+                <form class="email-form" id="emailForm">
+                    <input 
+                        type="email" 
+                        placeholder="Enter your email" 
+                        required 
+                        class="email-input"
+                        aria-label="Email subscription"
+                    >
+                    <button type="submit" class="email-submit">Subscribe <i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div id="emailMessage" class="email-message"></div>
+            </div>
             
             <div class="hero-buttons">
                 <button class="btn-primary" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})">
@@ -91,34 +115,88 @@
                 <h2>About Editkaro.in</h2>
                 <p>We turn raw footage into compelling stories that captivate audiences worldwide</p>
             </div>
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="icon-box">
-                        <i class="fas fa-film"></i>
-                    </div>
-                    <h3>Expert Editing</h3>
-                    <p>From concept to final cut, our skilled editors bring your vision to life with precision and creativity.</p>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>At Editkaro.in, our mission is to empower creators and businesses with world-class video editing and social media marketing solutions. We believe that every story deserves to be told beautifully, and our team is dedicated to transforming raw footage into compelling visual narratives that engage, inspire, and convert.</p>
+                    
+                    <h3>Our Vision</h3>
+                    <p>To become the leading video editing and social media marketing agency in South Asia, known for delivering exceptional quality, innovative solutions, and outstanding client satisfaction. We envision a world where every brand can access professional-grade video production without breaking the bank.</p>
                 </div>
-                <div class="about-card">
-                    <div class="icon-box">
-                        <i class="fas fa-share-alt"></i>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="icon-box">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3>Expert Editing</h3>
+                        <p>From concept to final cut, our skilled editors bring your vision to life with precision and creativity.</p>
                     </div>
-                    <h3>Social Media Focus</h3>
-                    <p>Optimized content for Instagram, TikTok, YouTube and more. We understand platform-specific requirements.</p>
+                    <div class="about-card">
+                        <div class="icon-box">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Social Media Focus</h3>
+                        <p>Optimized content for Instagram, TikTok, YouTube and more. We understand platform-specific requirements.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="icon-box">
+                            <i class="fas fa-sparkles"></i>
+                        </div>
+                        <h3>Creative Excellence</h3>
+                        <p>Award-winning creatives who push boundaries and deliver content that stands out in crowded feeds.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="icon-box">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Fast Turnaround</h3>
+                        <p>Quick delivery without compromising on quality. We respect deadlines and deliver on time.</p>
+                    </div>
                 </div>
-                <div class="about-card">
-                    <div class="icon-box">
-                        <i class="fas fa-sparkles"></i>
+            </div>
+
+            <!-- Team Section -->
+            <div class="team-section">
+                <h3 class="team-title">Our Expert Team</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar">RA</div>
+                        <h4>Rajesh Agarwal</h4>
+                        <p class="member-role">Founder & Creative Director</p>
+                        <p class="member-bio">10+ years of experience in video production and content creation.</p>
                     </div>
-                    <h3>Creative Excellence</h3>
-                    <p>Award-winning creatives who push boundaries and deliver content that stands out in crowded feeds.</p>
-                </div>
-                <div class="about-card">
-                    <div class="icon-box">
-                        <i class="fas fa-rocket"></i>
+                    <div class="team-member">
+                        <div class="member-avatar">PS</div>
+                        <h4>Priya Singh</h4>
+                        <p class="member-role">Lead Video Editor</p>
+                        <p class="member-bio">Expert in color grading and visual effects with 8+ years experience.</p>
                     </div>
-                    <h3>Fast Turnaround</h3>
-                    <p>Quick delivery without compromising on quality. We respect deadlines and deliver on time.</p>
+                    <div class="team-member">
+                        <div class="member-avatar">AK</div>
+                        <h4>Arjun Kapoor</h4>
+                        <p class="member-role">Social Media Strategist</p>
+                        <p class="member-bio">Specialized in content strategy and platform optimization.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">NS</div>
+                        <h4>Neha Sharma</h4>
+                        <p class="member-role">Motion Graphics Designer</p>
+                        <p class="member-bio">Creates stunning animations and visual effects for all platforms.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">VR</div>
+                        <h4>Vikram Reddy</h4>
+                        <p class="member-role">Audio Specialist</p>
+                        <p class="member-bio">Professional sound design and audio mixing expertise.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">MC</div>
+                        <h4>Maya Choudhury</h4>
+                        <p class="member-role">Client Manager</p>
+                        <p class="member-bio">Ensures seamless communication and project delivery.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -300,25 +378,28 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" name="contact">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required class="form-input">
+                        <input type="text" placeholder="Your Name" name="name" required class="form-input" aria-label="Name">
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required class="form-input">
+                        <input type="email" placeholder="Your Email" name="email" required class="form-input" aria-label="Email">
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Subject" required class="form-input">
+                        <input type="tel" placeholder="Phone Number" name="phone" class="form-input" aria-label="Phone">
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required class="form-input"></textarea>
+                        <input type="text" placeholder="Subject" name="subject" required class="form-input" aria-label="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" name="message" rows="5" required class="form-input" aria-label="Message"></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
                 </form>
@@ -356,13 +437,13 @@
                     <h4>Newsletter</h4>
                     <p>Subscribe for updates</p>
                     <div class="newsletter-form">
-                        <input type="email" placeholder="Your email">
-                        <button><i class="fas fa-paper-plane"></i></button>
+                        <input type="email" placeholder="Your email" aria-label="Newsletter email">
+                        <button aria-label="Subscribe to newsletter"><i class="fas fa-paper-plane"></i></button>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Editkaro.in. All rights reserved.</p>
+                <p>&copy; <span id="year">2025</span> Editkaro.in. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -370,13 +451,13 @@
     <!-- Video Modal -->
     <div class="modal" id="videoModal">
         <div class="modal-content">
-            <button class="modal-close" id="modalClose">&times;</button>
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
             <div id="videoContainer"></div>
         </div>
     </div>
 
     <!-- Toast Notification -->
-    <div class="toast" id="toast"></div>
+    <div class="toast" id="toast" role="alert"></div>
 
     <script src="script.js"></script>
 </body>
